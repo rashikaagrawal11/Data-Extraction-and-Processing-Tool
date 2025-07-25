@@ -10,7 +10,7 @@ import pymupdf
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
-# client = genai.Client(api_key="AIzaSyC_eBiiJRNneilrj30VnwsK2JkhoIG6Jlk")
+
 
 def pdfFromLink(pdf_url):
     response = requests.get(pdf_url)
@@ -34,7 +34,7 @@ def pdfToList (pdf, start=0, end=-1):
 import google.generativeai as genai
 
 # Configure the API key once globally
-genai.configure(api_key="AIzaSyAgHQQjyVKDs_AOydJCfO25oqNpKUcsigw")
+genai.configure(api_key="Api_key")
 
 # Load the model once (outside the function to avoid repeated loading)
 model = genai.GenerativeModel("gemini-1.5-flash")  # or "gemini-pro"
