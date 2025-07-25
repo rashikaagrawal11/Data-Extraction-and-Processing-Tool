@@ -15,7 +15,7 @@ llm = Ollama(model="mistral")  # or llama2, etc.
 embedding = OllamaEmbeddings(model="mistral")  # for vector store
 
 # PostgreSQL connection
-DATABASE_URL = os.getenv("DB_URL") or "postgresql://pdf-extracted-data_owner:npg_S1NKVvpwLJe3@ep-purple-rice-a140s2tb-pooler.ap-southeast-1.aws.neon.tech/pdf-extracted-data?sslmode=require"
+DATABASE_URL = os.getenv("DB_URL")
 engine = create_engine(DATABASE_URL)
 
 # Create PGVector store
