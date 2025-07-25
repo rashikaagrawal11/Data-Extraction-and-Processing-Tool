@@ -1,0 +1,9 @@
+pytesseract
+PyPDF2
+fastapi
+uvicorn
+PyMuPDF
+pillow
+prisma
+google-generativeai
+poppler-utils
